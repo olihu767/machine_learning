@@ -3,10 +3,10 @@
 With the use of supervised machine learning, we use several models to predict credit risk. 
 Some of the main features that helped us determine which model to use were the following:
 
-*Naive Random Oversampling 
-*SMOTE Oversampling
-*Undersampling	
-*Combination Sampling
+* Naive Random Oversampling 
+* SMOTE Oversampling
+* Undersampling	
+* Combination Sampling
 
 
 
@@ -21,57 +21,11 @@ Libraries: Warnings, Numpy, Pandas, Pathlib, Collections, Sklearn, Imblearn
 
 We have used 4 models to test out the predictions of low and high risk credit applications. The following table below shows our results.
 
-<table style = "width:20%>
-<tr>
-<th><Model></th>	
-<th><Accuracy></th> 
-<th><Precision - high risk></th>
-<th><Recall - high risk></th>
-<th><F1 - high risk></th>
-<th><Precision - low risk></th>
-<th><Recall - low risk></th>
-<th><F1 - low risk></th>
-
-<tr>
-<td>< Naive Random Oversampling ></td>
-<td>< 0.7168></td>
-<td>< 0.01></td>
-<td>< 0.72></td>
-<td>< 0.03></td>
-<td>< 1.00></td> 
-<td>< 0.71></td> 
-<td>< 0.83></td> 
-</tr>
-
-<tr>
-<td>SMOTE Oversampling</td>
-<td>< 0.6700></td>
-<td>< 0.01></td>
-<td>< 0.57></td>
-<td>< 0.03></td>
-<td>< 1.00></td>
-<td>< 0.77></td>
-<td>< 0.87></td>
-</tr>
-
-<tr>
-<td>< Undersampling ></td>
-<td>< 0.6432></td>
-<td>< 0.90></td>
-<td>< 0.02></td>
-<td>< 1.00></td>
-<td>< 0.39></td>
-<td>< 0.56></td>
-</tr>
-
-<tr>
-<td>< Combination Sampling></td>
-<td>< 0.01></td>
-<td>< 0.65></td>
-<td>< 0.03></td>
-<td>< 0.74></td>
-<td>< 0.85></td>
-</table>
+|Model	                    |Accuracy Score	|Precision - high risk|	Recall - high risk|	F1 - high risk|	Precision - low risk|	Recall - low risk|	F1 - low risk|
+|Naive Random Oversampling	|0.7168	        |0.01	              |0.72	              |0.03	          |1.00	                |0.71	             |0.83
+|SMOTE Oversampling	        |0.6700	        |0.01	              |0.57	              |0.03	          |1.00	                |0.77	             |0.87
+|Undersampling	            |0.6432	        |0.01	              |0.90	              |0.02	          |1.00	                |0.39	             |0.56
+|Combination Sampling	    |0.6962	        |0.01	              |0.65	              |0.03	          |1.00	                |0.74	             |0.85
 
 Looking at this table, we see that Naive Random Oversampling has the highest accuracy score. One thing to note, 
 we used the same solver for our Logistic Regression (solver = 'newton-cg') across all four models. This allows us to stay consistent to better measure the results.
