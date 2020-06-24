@@ -22,7 +22,7 @@ Libraries: Warnings, Numpy, Pandas, Pathlib, Collections, Sklearn, Imblearn
 We have used 4 models to test out the predictions of low and high risk credit applications. The following table below shows our results.
 
 |Model	                    |Accuracy Score	|Precision - high risk|	Recall - high risk|	F1 - high risk|	Precision - low risk|	Recall - low risk|	F1 - low risk|
-|---                        |---            |---                  |---                |---            |---                  |---                 |
+|:-------:                  |:-----:        |:------:             |:-----:            |:-----:        |:-----:              |:------:            |:-----:|
 |Naive Random Oversampling	|0.7168	        |0.01	              |0.72	              |0.03	          |1.00	                |0.71	             |0.83|
 |SMOTE Oversampling	        |0.6700	        |0.01	              |0.57	              |0.03	          |1.00	                |0.77	             |0.87|
 |Undersampling	            |0.6432	        |0.01	              |0.90	              |0.02	          |1.00	                |0.39	             |0.56|
